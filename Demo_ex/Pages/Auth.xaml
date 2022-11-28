@@ -1,0 +1,19 @@
+﻿<Window x:Class="Demo_ex.Pages.Auth"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_ex.Pages"
+        mc:Ignorable="d"
+        Title="Auth" Height="500" Width="600">
+    <Grid>
+        <Label FontFamily="Comic Sans MS" FontSize="24" Content="Авторизация" Margin="201,43,175,365"></Label>
+        <TextBlock Text="Логин: " FontSize="14"  FontFamily="Comic Sans MS" Margin="111,130,407,303"></TextBlock>
+        <TextBlock Text="Пароль: " FontSize="14"  FontFamily="Comic Sans MS" Margin="111,208,392,227"></TextBlock>
+        <TextBox Margin="175,124,140,303" Name="Login"/>
+        <PasswordBox Margin="176,202,140,227" Name="Pass"/>
+        <Button Content="Войти" Margin="176,383,140,41" Click="Button_Click"/>
+        <Label BorderBrush="Black" BorderThickness="2" Name="Generate_captch" Margin="200,262,140,167"/>
+        <TextBox Name="CheckCap" Margin="200,322,140,106"/>
+    </Grid>
+</Window>

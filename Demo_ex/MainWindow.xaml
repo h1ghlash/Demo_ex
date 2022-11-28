@@ -1,0 +1,24 @@
+﻿<Window x:Class="Demo_ex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_ex"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <ScrollViewer Margin="0 100 0 0">
+            <StackPanel Orientation="Vertical">
+                <ListBox x:Name="ListProduct"
+                         Width="830"
+                         ItemsSource="{Binding ProductsPanelCollection}"
+                         />
+            </StackPanel>
+        </ScrollViewer>
+        <TextBox x:Name="TextSearch" HorizontalAlignment="Left" Margin="292,21,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" TextChanged="TextSearch_TextChanged" Height="22"/>
+        <ComboBox x:Name="CmbFilter" HorizontalAlignment="Left" Margin="669,21,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbFilter_SelectionChanged"/>
+        <ComboBox x:Name="CmbSort" HorizontalAlignment="Left" Margin="818,21,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CmbSort_SelectionChanged"/>
+    </Grid>
+</Window>
